@@ -237,6 +237,10 @@ const resetFunc = () => {
   dispatch({type:ACTION.CURRENT_TEXT, payload: ''});
   dispatch({type:ACTION.STORE_PLAYER_NAME, payload: ''});
 
+  dispatch({type:ACTION.ROCK_SELECTED, payload:false});
+  dispatch({type:ACTION.PAPER_SELECTED, payload:false});
+  dispatch({type:ACTION.SCISSOR_SELECTED, payload:false});
+
   setStartValue(5);
   setGameStarted(false);
   setShowResult('');
