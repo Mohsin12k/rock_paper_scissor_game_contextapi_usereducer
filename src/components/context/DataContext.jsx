@@ -242,10 +242,10 @@ const resetFunc = () => {
   dispatch({type:ACTION.SCISSOR_SELECTED, payload:false});
 
   setStartValue(5);
-  setGameStarted(false);
   setShowResult('');
-  setShowFinalResult(false);
   setFinalResult('');
+  setShowFinalResult(false);
+  setGameStarted(false);
   clearInterval(setIntervalRf.current);
 };
 
